@@ -5,7 +5,11 @@
 
     <groupId>top.omgdo</groupId>
     <artifactId>february</artifactId>
+    <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
+    <modules>
+        <module>payment</module>
+    </modules>
     <name>february</name>
     <description>february</description>
 
@@ -19,7 +23,7 @@
         <log4j.version>1.2.17</log4j.version>
         <lombok.version>1.16.18</lombok.version>
         <mysql.version>5.1.47</mysql.version>
-        <druid.version>1.1.16</druid.version>
+        <druid.version>1.2.8</druid.version>
         <mybatis.plus.spring.boot.version>3.5.1</mybatis.plus.spring.boot.version>
     </properties>
 
@@ -60,7 +64,7 @@
             </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
-                <artifactId>druid</artifactId>
+                <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid.version}</version>
             </dependency>
             <dependency>
